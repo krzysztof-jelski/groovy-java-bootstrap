@@ -1,14 +1,12 @@
 package pl.pragmatists.groovybootstrap.java;
 
-class Country {
+class JavaCountry {
 
-    private final String iso;
-
-    private final String code;
-
+    public final String iso;
+    public final String code;
     public final String name;
 
-    Country(String iso, String code, String name) {
+    JavaCountry(String iso, String code, String name) {
         this.iso = iso;
         this.code = code;
         this.name = name;
@@ -23,7 +21,7 @@ class Country {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Country country = (Country) o;
+        JavaCountry country = (JavaCountry) o;
 
         if (!code.equals(country.code)) return false;
         if (!iso.equals(country.iso)) return false;

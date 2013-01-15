@@ -1,12 +1,12 @@
-package pl.pragmatists.groovybootstrap.groovy
+package pl.pragmatists.groovybootstrap.java;
 
-import org.junit.Test
+import static org.fest.assertions.Assertions.*;
 
-import static org.fest.assertions.Assertions.assertThat
+import org.junit.*;
 
-public class GroovyCountriesTest {
+public class JavaCountriesTest {
 
-    private GroovyCountries countries = new GroovyCountries()
+    private JavaCountries countries = new JavaCountries();
 
     @Test
     public void containsSomeCountries() {
@@ -20,7 +20,7 @@ public class GroovyCountriesTest {
 
     @Test
     public void containsCodes() {
-        assertThat(countries.byName("Poland")).isEqualTo(new GroovyCountry(iso: "POL", code: "PL", name: "Poland"));
+        assertThat(countries.byName("Poland")).isEqualTo(new JavaCountry("POL", "PL", "Poland"));
     }
 
     @Test

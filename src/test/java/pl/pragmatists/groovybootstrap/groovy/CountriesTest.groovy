@@ -20,7 +20,7 @@ public class GroovyCountriesTest {
 
     @Test
     public void containsCodes() {
-        assertThat(countries.byName("Poland")).isEqualTo(new GroovyCountry(iso: "POL", code: "PL", name: "Poland"));
+        assertThat(countries.byName("Poland")).isEqualTo(new GroovyCountry("POL", "PL", "Poland"));
     }
 
     @Test

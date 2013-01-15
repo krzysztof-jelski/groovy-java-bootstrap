@@ -25,9 +25,9 @@ class GroovyCountries {
     private def loadCountries() {
         def countries = Locale.availableLocales.collect({ locale ->
             new GroovyCountry(
-                    iso: getIsoCode(locale),
-                    code: locale.country,
-                    name: locale.getDisplayCountry(Locale.ENGLISH)
+                    getIsoCode(locale),
+                    locale.country,
+                    locale.getDisplayCountry(Locale.ENGLISH)
             )
         })
         countries.removeAll { it.name.isEmpty() }

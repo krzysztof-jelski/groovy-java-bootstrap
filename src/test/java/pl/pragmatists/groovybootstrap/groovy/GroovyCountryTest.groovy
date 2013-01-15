@@ -9,6 +9,6 @@ class GroovyCountryTest {
 
     @Test
     public void shouldHaveToString() {
-        assertThat(new GroovyCountry(iso: "iso", code: "code", name: "name").toString()).isEqualTo("iso - code - name")
+        assertThat(new GroovyCountry("iso", "code", "name").toString()).isEqualTo("iso - code - name")
     }
 }

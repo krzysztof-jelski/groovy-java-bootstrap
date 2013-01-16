@@ -1,5 +1,6 @@
 package pl.pragmatists.groovybootstrap.groovy
 
+import org.junit.Ignore
 import org.junit.Test
 
 import static org.fest.assertions.Assertions.assertThat
@@ -28,8 +29,4 @@ public class GroovyCountriesTest {
         assertThat(countries.all()).isSameAs(countries.all());
     }
 
-    @Test
-    public void isoCodeIsUnknownForSerbiaAndMontenegro() {
-        assertThat(countries.byName("Serbia and Montenegro").iso).isEqualTo("unknown");
-    }
 }

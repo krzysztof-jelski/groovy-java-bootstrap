@@ -28,8 +28,4 @@ public class JavaCountriesTest {
         assertThat(countries.all()).isSameAs(countries.all());
     }
 
-    @Test
-    public void isoCodeIsUnknownForSerbiaAndMontenegro() {
-        assertThat(countries.byName("Serbia and Montenegro").iso).isEqualTo("unknown");
-    }
-}
+ }

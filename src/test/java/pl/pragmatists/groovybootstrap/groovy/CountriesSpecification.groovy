@@ -8,6 +8,7 @@ class CountriesSpecification extends Specification {
         def countries = new GroovyCountries()
 
         then:
-        countries.allNames().size() == 112
+        countries.allNames() containsAll(["Poland", "New Zealand", "United Arab Emirates"])
     }
+
 }
